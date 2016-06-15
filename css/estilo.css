@@ -1,8 +1,10 @@
 body {
   background: black;
   color: white;
-  min-width: 100vh;
+  min-height: 100vh; /*muy importante para el flexbox a la hora de hacer el stiky-footer ya que ocupa el 100% del alto de la pantalla*/
   margin: 0;
+  display: flex; /*usando solo flexbox se soluciono el problema, apila uno al costado del otro*/
+  flex-direction: column; /*muestra la alineación del flex en forma de columna*/
 }
 h2 {
   margin: 0;
@@ -12,19 +14,22 @@ p {
   margin: 0;
 }
 header {
-  height: 50px;
+  /*height: 50px;*/
   background:#50545B;
 }
 
 section {
+
   background: red;
   color: black;
-  min-height: 500px; /*responde al tamaño minimo de 500px pero cuando se requiera mayor altura este  se adecuara*/
+    flex: 1;/*hace que ocupe su 100% en la seccion del contenido*/
+  /*min-height: 500px; responde al tamaño minimo de 500px pero cuando se requiera mayor altura este  se adecuara*/
 }
 
 footer {
+
 background: #161129;
-height: 100px;
+/*height: 50px;*/
 /*de una manera fija*/
 /*position: fixed;
 bottom: 0;

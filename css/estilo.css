@@ -1,0 +1,34 @@
+body {
+  background: black;
+  color: white;
+  min-width: 100vh;
+  margin: 0;
+}
+h2 {
+  margin: 0;
+}
+p {
+  font-size: 1.2em;
+  margin: 0;
+}
+header {
+  height: 50px;
+  background:#50545B;
+}
+
+section {
+  background: red;
+  color: black;
+  min-height: 500px; /*responde al tamaño minimo de 500px pero cuando se requiera mayor altura este  se adecuara*/
+}
+
+footer {
+background: #161129;
+height: 100px;
+/*de una manera fija*/
+/*position: fixed;
+bottom: 0;
+left:0;
+right: 0;*/
+
+}
